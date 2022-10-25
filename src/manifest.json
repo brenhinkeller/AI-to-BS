@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "AI to BS",
+	"version": "1.0",
+	"description": "Substitute certain overhyped programming terms with more accurate replacements",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"]
+		}
+	]
+}
