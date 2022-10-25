@@ -5,3 +5,6 @@ Inspired by and adapted from the infamous [cloud-to-butt](https://github.com/pan
 
 ### Install for firefox: 
 https://addons.mozilla.org/en-US/firefox/addon/ai-to-bs/
+
+### Gallery
+<img width="662" alt="ai-to-bs-1" src="https://user-images.githubusercontent.com/8967875/197886515-8e47945f-6e86-40a5-aefd-60c52a80e8d9.png">
