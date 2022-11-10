@@ -39,20 +39,17 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = v.replace(/\ban AI\b/g, "a BS");
 	v = v.replace(/\bAI\b/g, "BS");
-	v = v.replace(/Artificial Intelligence/g, "BS That Doesn't Exist Yet");
-	v = v.replace(/Artificial intelligence/g, "BS That Doesn't Exist Yet");
-	v = v.replace(/artificial Intelligence/g, "BS That Doesn't Exist Yet");
-	v = v.replace(/artificial intelligence/g, "BS That Doesn't Exist Yet");
-
+	
+	v = v.replace(/an [Aa]rtificial [Ii]ntelligence/g, "some BS That Doesn't Exist Yet");
+	v = v.replace(/An [Aa]rtificial [Ii]ntelligence/g, "Some BS That Doesn't Exist Yet");	
+	v = v.replace(/[Aa]rtificial [Ii]ntelligence/g, "BS That Doesn't Exist Yet");
+	
 	v = v.replace(/\bML\b/g, "IF");
-	v = v.replace(/\bMachine Learning\b/g, "IF Statements");
-	v = v.replace(/\bMachine learning\b/g, "IF Statements");
-	v = v.replace(/\bmachine learning\b/g, "IF Statements");
+	v = v.replace(/\b[Mm]achine [Ll]earning\b/g, "IF Statements");
 
-	v = v.replace(/\Deep Learning\b/g, "Linear Algebra");
-	v = v.replace(/\Deep learning\b/g, "Linear Algebra");
-	v = v.replace(/\deep learning\b/g, "Linear Algebra");
+	v = v.replace(/\[Dd]eep [Ll]earning\b/g, "Linear Algebra");
 
 	textNode.nodeValue = v;
 }
