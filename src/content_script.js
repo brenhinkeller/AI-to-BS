@@ -42,8 +42,8 @@ function handleText(textNode)
 	v = v.replace(/\ban AI\b/g, "a BS");
 	v = v.replace(/\bAI\b/g, "BS");
 	
-	v = v.replace(/an [Aa]rtificial [Ii]ntelligence/g, "some BS That Doesn't Exist Yet");
-	v = v.replace(/An [Aa]rtificial [Ii]ntelligence/g, "Some BS That Doesn't Exist Yet");	
+	v = v.replace(/\ban [Aa]rtificial [Ii]ntelligence/g, "some BS That Doesn't Exist Yet");
+	v = v.replace(/\bAn [Aa]rtificial [Ii]ntelligence/g, "Some BS That Doesn't Exist Yet");	
 	v = v.replace(/[Aa]rtificial [Ii]ntelligence/g, "BS That Doesn't Exist Yet");
 	
 	v = v.replace(/\bML\b/g, "IF");
