@@ -47,6 +47,8 @@ function handleText(textNode)
 	v = v.replace(/[Aa]rtificial [Ii]ntelligence/g, "BS That Doesn't Exist Yet");
 	
 	v = v.replace(/\bML\b/g, "IF");
+	
+	v = v.replace(/\ba [Mm]achine [Ll]earning\b/g, "an IF Statements");
 	v = v.replace(/\b[Mm]achine [Ll]earning\b/g, "IF Statements");
 
 	v = v.replace(/\[Dd]eep [Ll]earning\b/g, "Linear Algebra");
