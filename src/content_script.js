@@ -39,6 +39,7 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = v.replace(/\bAn AI\b/g, "A BS");
 	v = v.replace(/\ban AI\b/g, "a BS");
 	v = v.replace(/\bAI\b/g, "BS");
 	
@@ -48,6 +49,7 @@ function handleText(textNode)
 	
 	v = v.replace(/\bML\b/g, "IF");
 	
+	v = v.replace(/\bA [Mm]achine [Ll]earning\b/g, "An IF Statements");
 	v = v.replace(/\ba [Mm]achine [Ll]earning\b/g, "an IF Statements");
 	v = v.replace(/\b[Mm]achine [Ll]earning\b/g, "IF Statements");
 
